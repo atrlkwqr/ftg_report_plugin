@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "FTG Auto Report Plugin",
+  "version": "1.0",
+  "description": "findthegap auto report plugin",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://findthegap.co.kr/program/*/report"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ]
+}
